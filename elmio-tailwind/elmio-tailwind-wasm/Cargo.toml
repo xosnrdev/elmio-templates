@@ -1,0 +1,11 @@
+[package]
+name = "elmio-tailwind-wasm"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+elmio-tailwind-core = { path = "../elmio-tailwind-core" }
+elmio-core = { workspace = true }
+elmio-macro = { workspace = true }
+serde = { workspace = true }
+wasm-bindgen = { version = "0.2.95", features = ["serde-serialize"] }
