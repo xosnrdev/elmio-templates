@@ -1,0 +1,10 @@
+[package]
+name = "elmio-tailwind-cli"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+serde_json = { workspace = true }
+elmio-core = { workspace = true }
+url = { workspace = true }
+elmio-tailwind-core = { path = "../elmio-tailwind-core" }
