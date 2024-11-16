@@ -3,6 +3,9 @@ name = "elmio-tailwind-wasm"
 version = "0.1.0"
 edition = "2021"
 
+[lib]
+crate-type = ["cdylib"]
+
 [dependencies]
 elmio-tailwind-core = { path = "../elmio-tailwind-core" }
 elmio-core = { workspace = true }
