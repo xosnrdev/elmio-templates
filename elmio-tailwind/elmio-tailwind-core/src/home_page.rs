@@ -83,10 +83,6 @@ pub enum Msg {
     Decrement,
 }
 
-#[derive(Clone, Serialize, Deserialize)]
-#[serde(rename_all = "camelCase")]
-pub enum AppEffect {}
-
 fn view_head() -> Markup {
     html! {
         title { "Home Page" }
