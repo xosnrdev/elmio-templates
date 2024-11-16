@@ -12,3 +12,12 @@ elmio-core = "0.2.0"
 elmio-macro = "0.2.0"
 serde ={ version = "1.0.214", features = ["derive"] }
 url = { version = "2.5.3", features = ["serde"] }
+
+[workspace.package]
+description = """
+Helper templates for bootstrapping new Elmio projects using the elmio-cli.
+"""
+authors = ["Success Kingsley <hello@xosnrdev.tech>"]
+license = "MIT"
+edition = "2021"
+repository = "https://github.com/xosnrdev/elmio-templates"
