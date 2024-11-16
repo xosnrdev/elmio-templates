@@ -1,9 +1,9 @@
 [workspace]
 resolver = "2"
 members = [
-    "elmio-tailwind-cli",
-    "elmio-tailwind-core",
-    "elmio-tailwind-wasm",
+    "app_cli",
+    "app_core",
+    "app_wasm",
 ]
 
 [workspace.dependencies]

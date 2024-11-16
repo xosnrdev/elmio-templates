@@ -3,6 +3,41 @@
 version = 3
 
 [[package]]
+name = "app_cli"
+version = "0.1.0"
+dependencies = [
+ "app_core",
+ "elmio-core",
+ "serde_json",
+ "url",
+]
+
+[[package]]
+name = "app_core"
+version = "0.1.0"
+dependencies = [
+ "elmio-core",
+ "elmio-macro",
+ "maud",
+ "serde",
+ "serde_json",
+ "strum",
+ "strum_macros",
+ "url",
+]
+
+[[package]]
+name = "app_wasm"
+version = "0.1.0"
+dependencies = [
+ "app_core",
+ "elmio-core",
+ "elmio-macro",
+ "serde",
+ "wasm-bindgen",
+]
+
+[[package]]
 name = "bumpalo"
 version = "3.16.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -46,41 +81,6 @@ checksum = "80d7654af89841b07bc2c78c41a6dde851edd7fcc42b35facdd4514911b2e8e8"
 dependencies = [
  "quote",
  "syn",
-]
-
-[[package]]
-name = "elmio-tailwind-cli"
-version = "0.1.0"
-dependencies = [
- "elmio-core",
- "elmio-tailwind-core",
- "serde_json",
- "url",
-]
-
-[[package]]
-name = "elmio-tailwind-core"
-version = "0.1.0"
-dependencies = [
- "elmio-core",
- "elmio-macro",
- "maud",
- "serde",
- "serde_json",
- "strum",
- "strum_macros",
- "url",
-]
-
-[[package]]
-name = "elmio-tailwind-wasm"
-version = "0.1.0"
-dependencies = [
- "elmio-core",
- "elmio-macro",
- "elmio-tailwind-core",
- "serde",
- "wasm-bindgen",
 ]
 
 [[package]]
