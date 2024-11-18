@@ -94,15 +94,23 @@ fn view_head() -> Markup {
 
 fn view_body(model: &Model) -> Markup {
     html! {
-        div id=(Id::ElmioTailwind) {
-            div class="flex p-4" {
-                button id=(Id::Decrement) class="w-28 text-center items-center px-3 py-2 border border-transparent text-sm leading-4 font-medium rounded-md shadow-sm text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500" type="button" {
+        div id=(Id::ElmioTailwind) class="flex flex-col items-center justify-center min-h-dvh p-4" {
+            h1 class="text-2xl font-bold text-gray-800 mb-4" { "Welcome to Elmio Tailwind Demo" }
+            p class="text-gray-600 mb-8" {
+                "This is a simple counter app built using the Elmio framework with Tailwind CSS support."
+            }
+            div class="flex flex-row items-center space-x-4" {
+                button id=(Id::Decrement)
+                       class="w-28 text-center px-3 py-2 border border-transparent text-sm font-medium rounded-md shadow-sm text-white bg-red-500 hover:bg-red-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-red-400"
+                       type="button" aria-label="Decrement count" {
                     "Decrement"
                 }
-                div class="mx-4 w-28" {
-                    input value=(model.count) class="text-center shadow-sm focus:ring-indigo-500 focus:border-indigo-500 block w-full sm:text-sm border-gray-300 rounded-md" type="text" readonly;
+                div class="text-center w-28 text-lg font-semibold text-gray-700 bg-white border border-gray-300 rounded-md shadow-sm" {
+                    (model.count)
                 }
-                button id=(Id::Increment) class="w-28 text-center items-center px-3 py-2 border border-transparent text-sm leading-4 font-medium rounded-md shadow-sm text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500" type="button" {
+                button id=(Id::Increment)
+                       class="w-28 text-center px-3 py-2 border border-transparent text-sm font-medium rounded-md shadow-sm text-white bg-green-500 hover:bg-green-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-green-400"
+                       type="button" aria-label="Increment count" {
                     "Increment"
                 }
             }
