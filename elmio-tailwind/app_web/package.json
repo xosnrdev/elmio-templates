@@ -31,11 +31,9 @@
         "typescript": "5.6.3"
     },
     "engines": {
-        "node": ">=20.11.0",
-        "yarn": "Please use npm",
-        "pnpm": "Please use npm"
+        "node": ">=20.11.0"
     },
     "dependencies": {
-        "elmio-js": "1.0.1"
+        "elmio-js": "1.0.2"
     }
 }
