@@ -15,17 +15,17 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "baf1de4339761588bc0619e3cbc0120ee582ebb74b53b4efbf79117bd2da40fd"
 
 [[package]]
-name = "counter_cli"
+name = "counterapp_cli"
 version = "0.1.0"
 dependencies = [
- "counter_core",
+ "counterapp_core",
  "elmio-core",
  "serde_json",
  "url",
 ]
 
 [[package]]
-name = "counter_core"
+name = "counterapp_core"
 version = "0.1.0"
 dependencies = [
  "elmio-core",
@@ -39,10 +39,10 @@ dependencies = [
 ]
 
 [[package]]
-name = "counter_wasm"
+name = "counterapp_wasm"
 version = "0.1.0"
 dependencies = [
- "counter_core",
+ "counterapp_core",
  "elmio-core",
  "elmio-macro",
  "serde",

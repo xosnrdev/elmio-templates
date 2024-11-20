@@ -11,6 +11,6 @@ fi
 
 if [[ "$event" == "after_asset_hash" || "$env" == "dev" ]]; then
     # Generate html
-    ./target/$target/counter_cli home_page >dist/index.html
+    ./target/$target/counterapp_cli home_page >dist/index.html
     echo "Not found" >dist/404.html
 fi
