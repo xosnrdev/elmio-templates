@@ -1,4 +1,4 @@
-use counter_core::home_page;
+use counterapp_core::home_page;
 use elmio_core::page::{wasm, Page};
 use elmio_macro::impl_wasm_page;
 use wasm_bindgen::{prelude::wasm_bindgen, JsValue};

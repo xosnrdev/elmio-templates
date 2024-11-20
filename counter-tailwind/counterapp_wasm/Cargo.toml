@@ -1,5 +1,5 @@
 [package]
-name = "counter_wasm"
+name = "counterapp_wasm"
 version = "0.1.0"
 edition.workspace = true
 
@@ -7,7 +7,7 @@ edition.workspace = true
 crate-type = ["cdylib"]
 
 [dependencies]
-counter_core = { path = "../counter_core" }
+counterapp_core = { path = "../counterapp_core" }
 elmio-core = { workspace = true }
 elmio-macro = { workspace = true }
 serde = { workspace = true }
