@@ -1,6 +1,6 @@
 {
-    "name": "app_web",
-    "version": "1.0.0",
+    "name": "counter_web",
+    "version": "0.1.0",
     "type": "module",
     "scripts": {
         "fmt": "biome format --write .",
@@ -11,19 +11,9 @@
         "compile-ts": "tsc --noEmit --project .",
         "build-js-dev": "esbuild src/*_page.ts --bundle --format=esm --target=es2020 --outdir=../dist/",
         "build-js-release": "esbuild --minify src/*_page.ts --bundle --format=esm --target=es2020 --outdir=../dist/",
-        "build-css-dev": "tailwindcss -i css/app.css -o ../dist/app.css",
-        "build-css-release": "tailwindcss --minify -i css/app.css -o ../dist/app.css"
+        "build-css-dev": "tailwindcss -i css/app.css -o ../dist/index.css",
+        "build-css-release": "tailwindcss --minify -i css/app.css -o ../dist/index.css"
     },
-    "repository": {
-        "type": "git",
-        "url": "git+https://github.com/xosnrdev/elmio-templates.git"
-    },
-    "bugs": {
-        "url": "https://github.com/xosnrdev/elmio-templates/issues"
-    },
-    "homepage": "https://github.com/xosnrdev/elmio-templates#readme",
-    "author": "Success Kingsley <hello@xosnrdev.tech>",
-    "license": "MIT",
     "devDependencies": {
         "@biomejs/biome": "1.9.4",
         "esbuild": "0.24.0",
