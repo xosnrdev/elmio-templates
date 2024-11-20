@@ -1,16 +1,13 @@
 [package]
-name = "app_wasm"
+name = "counter_wasm"
 version = "0.1.0"
 edition.workspace = true
-authors.workspace = true
-license.workspace = true
-repository.workspace = true
 
 [lib]
 crate-type = ["cdylib"]
 
 [dependencies]
-app_core = { path = "../app_core" }
+counter_core = { path = "../counter_core" }
 elmio-core = { workspace = true }
 elmio-macro = { workspace = true }
 serde = { workspace = true }

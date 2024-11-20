@@ -1,13 +1,10 @@
 [package]
-name = "app_cli"
+name = "counter_cli"
 version = "0.1.0"
 edition.workspace = true
-authors.workspace = true
-license.workspace = true
-repository.workspace = true
 
 [dependencies]
 serde_json = { workspace = true }
 elmio-core = { workspace = true }
 url = { workspace = true }
-app_core = { path = "../app_core" }
+counter_core = { path = "../counter_core" }

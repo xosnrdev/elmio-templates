@@ -3,17 +3,29 @@
 version = 3
 
 [[package]]
-name = "app_cli"
+name = "bumpalo"
+version = "3.16.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "79296716171880943b8470b5f8d03aa55eb2e645a4874bdbb28adb49162e012c"
+
+[[package]]
+name = "cfg-if"
+version = "1.0.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "baf1de4339761588bc0619e3cbc0120ee582ebb74b53b4efbf79117bd2da40fd"
+
+[[package]]
+name = "counter_cli"
 version = "0.1.0"
 dependencies = [
- "app_core",
+ "counter_core",
  "elmio-core",
  "serde_json",
  "url",
 ]
 
 [[package]]
-name = "app_core"
+name = "counter_core"
 version = "0.1.0"
 dependencies = [
  "elmio-core",
@@ -27,27 +39,15 @@ dependencies = [
 ]
 
 [[package]]
-name = "app_wasm"
+name = "counter_wasm"
 version = "0.1.0"
 dependencies = [
- "app_core",
+ "counter_core",
  "elmio-core",
  "elmio-macro",
  "serde",
  "wasm-bindgen",
 ]
-
-[[package]]
-name = "bumpalo"
-version = "3.16.0"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "79296716171880943b8470b5f8d03aa55eb2e645a4874bdbb28adb49162e012c"
-
-[[package]]
-name = "cfg-if"
-version = "1.0.0"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "baf1de4339761588bc0619e3cbc0120ee582ebb74b53b4efbf79117bd2da40fd"
 
 [[package]]
 name = "displaydoc"

@@ -1,11 +1,15 @@
-use std::{env, process};
-
-use app_core::home_page;
+use counter_core::home_page;
 use elmio_core::page::Page;
+use std::{env, process};
 use url::Url;
 
 fn main() {
     let args: Vec<String> = env::args().collect();
+
+    if args.len() < 2 {
+        eprintln!("Usage: counter_cli <command>");
+        process::exit(1);
+    }
 
     match args[1].as_str() {
         "home_page" => {
